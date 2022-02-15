@@ -8,10 +8,7 @@ const realTransactions: Transaction[] = jsonRealTransactions as Transaction[];
 
 console.log('HW_1 - Application start!');
 console.time('Process time');
-
-// Your code here
-var valueTest = new Set([...sampleTransactions.map((item) => item.name)]);
-
+var valueTest = new Set([...realTransactions.map((item) => item.name)]);
 console.log('valueTest', valueTest);
 
 console.timeEnd('Process time');
